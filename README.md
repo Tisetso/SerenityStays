@@ -1,8 +1,11 @@
 Curriculum
+
 Short Specializations
 
 Project Name: SerenityStays
+
 Team Members:
+
 Tshepiso Mafuyeka
 
 
