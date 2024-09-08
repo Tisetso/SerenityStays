@@ -7,6 +7,7 @@ Tshepiso Mafuyeka
 
 
 Project Description:
+
 SerenityStays is a web platform designed to connect travelers with unique vacation rentals across the globe. Whether you're looking for a cozy cabin in the woods, a beachfront villa, or a luxurious city apartment, SerenityStays offers a wide range of accommodations to suit every preference. The platform will feature an intuitive interface for browsing, booking, and reviewing properties, making it easy for users to find their perfect getaway.
 Python Back-end
 
