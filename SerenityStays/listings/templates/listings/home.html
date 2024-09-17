@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Serenity Stays</h1>
+    </header>
+    <main>
+        <section>
+            <img src="{% static 'images/home-banner.jpg' %}" alt="Beautiful Home" style="width: 100%; height: auto;">
+            <p>Your perfect getaway starts here. Explore our unique vacation rentals and find your next adventure.</p>
+            <a href="{% url 'property_list' %}">View Properties</a>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Serenity Stays. All rights reserved.</p>
+    </footer>
+</body>
+</html>

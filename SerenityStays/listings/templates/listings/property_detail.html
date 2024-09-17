@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ property.title }}</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <header>
+        <h1>{{ property.title }}</h1>
+        <nav>
+            <a href="{% url 'property_list' %}">Back to Listings</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>{{ property.title }}</h2>
+        <p>{{ property.description }}</p>
+        <p>Price: ${{ property.price }}</p>
+        <p>Location: {{ property.location }}</p>
+        {% if property.image %}
+        <img src="{{ property.image.url }}" alt="{{ property.title }}" style="width:600px;height:auto;">
+        {% endif %}
+        <a href="{% url 'booking' property.id %}">Book Now</a>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 SerenityStays</p>
+    </footer>
+</body>
+</html>

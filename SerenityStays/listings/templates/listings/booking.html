@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking - {{ property.title }}</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <header>
+        <h1>Booking for {{ property.title }}</h1>
+        <nav>
+            <a href="{% url 'property_list' %}">Back to Listings</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Book {{ property.title }}</h2>
+        <p>Price: ${{ property.price }}</p>
+        <p>Location: {{ property.location }}</p>
+        <form action="{% url 'booking' property.id %}" method="post">
+            {% csrf_token %}
+            <!-- Add your booking form fields here -->
+            <button type="submit">Confirm Booking</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 SerenityStays</p>
+    </footer>
+</body>
+</html>
