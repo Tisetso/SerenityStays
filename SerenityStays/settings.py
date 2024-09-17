@@ -76,9 +76,9 @@ WSGI_APPLICATION = 'SerenityStays.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'serenity_db'
-        'USER': 'your_db_user',
-        'PASSWORD': 'your_db_password',
+        'NAME': 'serenity_db',
+        'USER': 'Mafuyeka',
+        'PASSWORD': '@Tshepiso1971',
         'HOST': 'localhost',
         'PORT': '5432',
     }
