@@ -1,5 +1,5 @@
 # SerenityStays
-
+![SerenityStays House](https://github.com/user-attachments/assets/e6a5e84b-2b74-4930-8bf6-a9a0976e1470)
 ## Team Members:
 - Tshepiso Mafuyeka
 
