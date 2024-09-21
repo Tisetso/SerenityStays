@@ -1,0 +1,12 @@
+Django>=3.2
+psycopg2-binary  # if you're using PostgreSQL
+djangorestframework
+django-cors-headers
+stripe
+gunicorn
+django-debug-toolbar
+django-allauth
+whitenoise
+Pillow
+requests
+# Add any other dependencies you need

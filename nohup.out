@@ -1,0 +1,20 @@
+[2024-09-21 03:02:27 -0700] [20857] [INFO] Starting gunicorn 23.0.0
+[2024-09-21 03:02:27 -0700] [20857] [INFO] Listening at: http://127.0.0.1:8000 (20857)
+[2024-09-21 03:02:27 -0700] [20857] [INFO] Using worker: sync
+[2024-09-21 03:02:27 -0700] [20859] [INFO] Booting worker with pid: 20859
+[2024-09-21 03:02:27 -0700] [20860] [INFO] Booting worker with pid: 20860
+[2024-09-21 03:02:27 -0700] [20861] [INFO] Booting worker with pid: 20861
+[2024-09-21 12:05:40 +0000] [20861] [INFO] Worker exiting (pid: 20861)
+[2024-09-21 12:05:40 +0000] [20859] [INFO] Worker exiting (pid: 20859)
+[2024-09-21 12:05:40 +0000] [20860] [INFO] Worker exiting (pid: 20860)
+[2024-09-21 05:05:40 -0700] [20857] [INFO] Handling signal: term
+[2024-09-21 05:05:40 -0700] [20857] [ERROR] Worker (pid:20860) was sent SIGTERM!
+[2024-09-21 05:05:40 -0700] [20857] [ERROR] Worker (pid:20859) was sent SIGTERM!
+[2024-09-21 05:05:40 -0700] [20857] [ERROR] Worker (pid:20861) was sent SIGTERM!
+[2024-09-21 05:05:40 -0700] [20857] [INFO] Shutting down: Master
+[2024-09-21 05:07:47 -0700] [21482] [INFO] Starting gunicorn 23.0.0
+[2024-09-21 05:07:47 -0700] [21482] [INFO] Listening at: http://0.0.0.0:8000 (21482)
+[2024-09-21 05:07:47 -0700] [21482] [INFO] Using worker: sync
+[2024-09-21 05:07:47 -0700] [21484] [INFO] Booting worker with pid: 21484
+[2024-09-21 12:59:52 +0000] [21484] [INFO] Parent changed, shutting down: <Worker 21484>
+[2024-09-21 12:59:52 +0000] [21484] [INFO] Worker exiting (pid: 21484)
