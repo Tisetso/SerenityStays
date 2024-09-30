@@ -1,28 +1,29 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Booking - {{ property.title }}</title>
+    <title>{{ property.title }}</title>
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
 </head>
 <body>
     <header>
-        <h1>Booking for {{ property.title }}</h1>
+        <h1>{{ property.title }}</h1>
         <nav>
             <a href="{% url 'property_list' %}">Back to Listings</a>
         </nav>
     </header>
 
     <main>
-        <h2>Book {{ property.title }}</h2>
+        <h2>{{ property.title }}</h2>
+        <p>{{ property.description }}</p>
         <p>Price: ${{ property.price }}</p>
         <p>Location: {{ property.location }}</p>
-        <form action="{% url 'booking' property.id %}" method="post">
-            {% csrf_token %}
-            <!-- Add your booking form fields here -->
-            <button type="submit">Confirm Booking</button>
-        </form>
+        {% if property.image %}
+        <img src="{{ property.image.url }}" alt="{{ property.title }}" style="width:600px;height:auto;">
+        {% endif %}
+        <a href="{% url 'booking' property.id %}">Book Now</a>
     </main>
 
     <footer>
